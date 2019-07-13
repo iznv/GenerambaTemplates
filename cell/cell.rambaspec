@@ -1,0 +1,8 @@
+name: "Cell"
+author: "Ivan Zinovyev"
+version: "1.0"
+license: "MIT"
+
+code_files:
+- {name: Cell.swift, path: Code/Cell.swift.liquid}
+- {name: CellViewModel.swift, path: Code/CellViewModel.swift.liquid}

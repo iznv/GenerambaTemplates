@@ -1,0 +1,7 @@
+name: "View"
+author: "Ivan Zinovyev"
+version: "1.0"
+license: "MIT"
+
+code_files:
+- {name: View.swift, path: Code/View.swift.liquid}
