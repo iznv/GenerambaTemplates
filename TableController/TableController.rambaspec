@@ -1,0 +1,8 @@
+name: "TableController"
+author: "Ivan Zinovyev"
+version: "1.0"
+license: "MIT"
+
+code_files:
+- {name: ViewController.swift, path: Code/ViewController.swift.liquid}
+- {name: ViewModel.swift, path: Code/ViewModel.swift.liquid}

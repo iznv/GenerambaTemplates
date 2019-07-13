@@ -1,6 +1,7 @@
+import TableKit
 import Utils
 
-class {{ module_info.name }}ViewController: BaseViewController<{{ module_info.name }}ViewModel> {
+class {{ module_info.name }}ViewController: BaseTableViewController<{{ module_info.name }}ViewModel> {
     
     // MARK: - Constants
     
@@ -21,12 +22,14 @@ class {{ module_info.name }}ViewController: BaseViewController<{{ module_info.na
     
 
     // MARK: - Properties
+    
+    lazy var tableDirector = TableDirector(tableView: tableView)
 
     
 
     // MARK: - Computed Properties
 
-    
+
 
     // MARK: - Life Cycle
     
@@ -35,23 +38,37 @@ class {{ module_info.name }}ViewController: BaseViewController<{{ module_info.na
 
         
     }
+
+    // MARK: - Table
     
-    // MARK: - Subviews
-    
-    override func addViews() {
-        
-    }
-    
-    // MARK: - Constraints
-    
-    override func configureConstraints() {
-        
+    override func configureTableView() {
+        tableDirector.replace(with: [
+            section
+        ])
     }
     
     // MARK: - Overrides
 
     
 
+}
+
+// MARK: - Table
+
+private extension {{ module_info.name }}ViewController {
+    
+    // MARK: - Sections
+    
+    var section: TableSection {
+        return TableSection(onlyRows: [
+            
+        ])
+    }
+    
+    // MARK: - Rows
+    
+    
+    
 }
 
 // MARK: - Actions
