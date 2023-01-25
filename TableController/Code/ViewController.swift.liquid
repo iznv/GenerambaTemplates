@@ -39,7 +39,10 @@ class {{ module_info.name }}ViewController: BaseTableViewController<{{ module_in
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        bind()
+        localize()
+
+        configureTableView()
     }
 
     // MARK: - Table
@@ -53,6 +56,30 @@ class {{ module_info.name }}ViewController: BaseTableViewController<{{ module_in
     // MARK: - Overrides
 
     
+
+}
+
+// MARK: - Binding
+
+private extension {{ module_info.name }}ViewController {
+
+    func bind() {
+        bindBarButtons()
+        bindViews()
+        bindViewModel()
+    }
+
+    func bindBarButtons() {
+        
+    }
+
+    func bindViews() {
+        
+    }
+
+    func bindViewModel() {
+        
+    }
 
 }
 
@@ -94,7 +121,9 @@ private extension {{ module_info.name }}ViewController {
 
 private extension {{ module_info.name }}ViewController {
 
-    
+    func localize() {
+        
+    }
 
 }
 

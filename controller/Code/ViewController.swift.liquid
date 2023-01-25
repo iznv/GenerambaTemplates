@@ -35,7 +35,8 @@ class {{ module_info.name }}ViewController: BaseViewController<{{ module_info.na
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        bind()
+        localize()
     }
     
     // MARK: - Subviews
@@ -53,6 +54,30 @@ class {{ module_info.name }}ViewController: BaseViewController<{{ module_info.na
     // MARK: - Overrides
 
     
+
+}
+
+// MARK: - Binding
+
+private extension {{ module_info.name }}ViewController {
+
+    func bind() {
+        bindBarButtons()
+        bindViews()
+        bindViewModel()
+    }
+
+    func bindBarButtons() {
+        
+    }
+
+    func bindViews() {
+        
+    }
+
+    func bindViewModel() {
+        
+    }
 
 }
 
@@ -76,7 +101,9 @@ private extension {{ module_info.name }}ViewController {
 
 private extension {{ module_info.name }}ViewController {
 
-    
+    func localize() {
+        
+    }
 
 }
 

@@ -54,16 +54,18 @@ extension {{ module_info.name }}Cell: ConfigurableCell {
     static let defaultHeight: CGFloat? = 44
     
     func configure(with viewModel: {{ module_info.name }}CellViewModel) {
-        
+        bind(viewModel)
     }
     
 }
 
-// MARK: - Actions
+// MARK: - Binding
 
 private extension {{ module_info.name }}Cell {
 
-    
+    func bind(_ viewModel: {{ module_info.name }}CellViewModel) {
+
+    }
 
 }
 
