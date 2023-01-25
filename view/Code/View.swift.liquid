@@ -107,7 +107,11 @@ import SwiftUI
 struct {{ module_info.name }}View_Previews: PreviewProvider {
   
     static var previews: some View {
-        return {{ module_info.name }}View()
+        let view = {{ module_info.name }}View()
+
+        
+
+        return view
             .preview
             .previewLayout(.sizeThatFits)
     }
