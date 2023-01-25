@@ -98,7 +98,7 @@ struct {{ module_info.name }}Cell_Previews: PreviewProvider {
         return cell.preview
             .previewLayout(.fixed(
                 width: 375,
-                height: {{ module_info.name }}.defaultHeight ?? .zero)
+                height: {{ module_info.name }}Cell.defaultHeight ?? .zero)
             )
     }
   
