@@ -1,6 +1,6 @@
 {% include 'header' %}
 
-import Utils
+import SwiftLibraryUIKit
 
 class {{ module_info.name }}ViewController: BaseViewController<{{ module_info.name }}ViewModel> {
     
@@ -79,3 +79,21 @@ private extension {{ module_info.name }}ViewController {
     
 
 }
+
+// MARK: - Preview
+
+#if DEBUG
+
+import SwiftUI
+
+struct {{ module_info.name }}ViewController_Previews: PreviewProvider {
+
+    static var previews: some View {
+        {{ module_info.name }}ViewController(viewModel: .init())
+            .preview
+    }
+
+}
+
+#endif
+

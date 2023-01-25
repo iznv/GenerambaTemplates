@@ -1,6 +1,6 @@
 {% include 'header' %}
 
-import Utils
+import SwiftLibraryUIKit
 
 class {{ module_info.name }}View: BaseView {
 
@@ -82,16 +82,10 @@ private extension {{ module_info.name }}View {
 
 }
 
-// MARK: - Layout
+// MARK: - Constraints
 
 private extension {{ module_info.name }}View {
-    
-    // MARK: - Manual
-    
-    
-    
-    // MARK: - Auto
-    
+
     
 
 }
@@ -103,3 +97,21 @@ private extension {{ module_info.name }}View {
     
 
 }
+
+// MARK: - Preview
+
+#if DEBUG
+
+import SwiftUI
+
+struct {{ module_info.name }}View_Previews: PreviewProvider {
+  
+    static var previews: some View {
+        return {{ module_info.name }}View()
+            .preview
+            .previewLayout(.sizeThatFits)
+    }
+  
+}
+
+#endif

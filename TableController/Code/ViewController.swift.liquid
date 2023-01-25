@@ -1,7 +1,8 @@
 {% include 'header' %}
 
+import SwiftLibraryTableKit
+import SwiftLibraryUIKit
 import TableKit
-import Utils
 
 class {{ module_info.name }}ViewController: BaseTableViewController<{{ module_info.name }}ViewModel> {
     
@@ -25,7 +26,7 @@ class {{ module_info.name }}ViewController: BaseTableViewController<{{ module_in
 
     // MARK: - Properties
     
-    lazy var tableDirector = TableDirector(tableView: tableView)
+    private lazy var tableDirector = TableDirector(tableView: tableView)
 
     
 
@@ -96,3 +97,20 @@ private extension {{ module_info.name }}ViewController {
     
 
 }
+
+// MARK: - Preview
+
+#if DEBUG
+
+import SwiftUI
+
+struct {{ module_info.name }}ViewController_Previews: PreviewProvider {
+
+    static var previews: some View {
+        {{ module_info.name }}ViewController(viewModel: .init())
+            .preview
+    }
+
+}
+
+#endif
