@@ -138,6 +138,7 @@ struct {{ module_info.name }}ViewController_Previews: PreviewProvider {
     static var previews: some View {
         {{ module_info.name }}ViewController(viewModel: .init())
             .preview
+            .edgesIgnoringSafeArea(.all)
     }
 
 }
