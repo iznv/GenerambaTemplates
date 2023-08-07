@@ -73,9 +73,9 @@ class {{ module_info.name }}ViewController: BaseTableViewController<{{ module_in
 private extension {{ module_info.name }}ViewController {
 
     func bind() {
+        bindViewModel()
         bindBarButtons()
         bindViews()
-        bindViewModel()
     }
 
     func bindBarButtons() {

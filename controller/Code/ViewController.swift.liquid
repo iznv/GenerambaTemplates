@@ -71,9 +71,9 @@ class {{ module_info.name }}ViewController: BaseViewController<{{ module_info.na
 private extension {{ module_info.name }}ViewController {
 
     func bind() {
+        bindViewModel()
         bindBarButtons()
         bindViews()
-        bindViewModel()
     }
 
     func bindBarButtons() {
