@@ -93,27 +93,3 @@ private extension {{ module_info.name }}Cell {
     
     
 }
-
-// MARK: - Preview
-
-#if DEBUG
-
-import SwiftUI
-
-struct {{ module_info.name }}Cell_Previews: PreviewProvider {
-  
-    static var previews: some View {
-        let cell = {{ module_info.name }}Cell()
-        cell.configure(with: .init())
-        
-        return cell.preview
-            .previewLayout(.fixed(
-                width: 375,
-                height: {{ module_info.name }}Cell.defaultHeight ?? .zero)
-            )
-    }
-  
-}
-
-#endif
-
